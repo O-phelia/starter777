@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden; 
+}
+
+
+body{
+    background-image: url(./img/未命名-1.png);
+    /* background-color: #3c93b5; */
+
+}
+
+.logo{
+    height:100%;
+    position: relative;
+    left: 34%;
+}
+.logo img{
+    width: 120px;
+}
+
+.header{
+    background-color: #a92626;
+    padding: 18px 10px;
+    height: 80PX;
+    width: 100%;
+    z-index: 10;
+}
+.header #menu-toggler{
+    display: none;
+}
+.header .fa-bars{
+    transform: scale(1.5);
+    color: #070707;
+    position: absolute;
+    right: 30px;top: 40px;
+    
+}
+nav{
+    transition: 0.4s ease-in;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    
+}
+nav hr{
+    margin-top: 15px;
+    color: rgb(177, 96, 96);
+    border:dotted 6px rgb(192, 118, 118) ;
+}
+nav h4{
+    color: rgb(177, 96, 96);
+    text-align: center;
+    margin-top: 20px;
+}
+.navbar{
+
+    /* margin-top: 0PX; */
+    display: block;
+    background-color: #831d1d;
+    margin-left: -11px;
+    height: 760%;
+    padding-top: 20px;
+    width: 106%;
+}
+nav a{
+
+    text-decoration:none;
+    color: #ffffff;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    transition: 0.1s ease-in;
+    
+}
+#menu-toggler:checked ~ .navbar{ 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 1);
+}
+
+nav a:hover{
+    background-color: #581313;
+    box-shadow:5px 5px 5px #621616;
+}
+
+
+/* MOBILE 導覽列 END^ | 幻燈片START ˇ--------------------------------------------------------------------------------- */
+
+.carousel{
+    margin-top: 30%;
+}
+.bn-scope{
+    height:600px ;
+}
+
+.donut-pic{
+    margin-top: 70px;
+    /* background-color: #fff; */
+    animation: donut 1s ease  infinite alternate none;
+
+}
+.carousel-control-prev{
+    display: none;
+}
+/* 按鈕 */
+.carousel-control-next{
+    position: absolute;
+    right: 20%;
+    top: 400px;
+    height: 90px;
+    /* opacity: 0; */
+}
+.nextbtn{
+    width: 120px;
+    opacity:1;
+}
+.nextbtn:active{
+    box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* --------------------- */
+@keyframes donut{
+    0%{
+    transform: translateY(0px);
+        
+    }
+    100%{
+        transform: translateY(35px);
+
+    }
+}
+/* --------------------- */
+
+/* MOBILE BANNER橫幅幻燈片 END|小活動頁 START ˇ--------------------------------------------------------------------------------- */
+
+.activity{
+    background-color: #f0d4db;
+    height: 100%;
+    box-shadow: 0px -25px 30px rgba(255, 255, 255, 0.4);
+}
+.activityPic{
+    margin-top: 5%;
+}
+.activity txt{
+    height: 130px;
+}
+.activityRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.activity h1{
+    font-family: 'Varela Round', sans-serif;;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: default;
+}
+.activity hr{
+    color: #726262;
+}
+.activity p{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: default;
+}

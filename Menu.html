@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./reset.css">
-        <link rel="stylesheet" href="./st-menu.css">
+        <link rel="stylesheet" href="./menu-style.css">
     </head>
 
     <body>
@@ -17,9 +17,9 @@
     <!-- 導覽列----------------- -->
     <div class="header container-fluid fixed-top " >
         <div class=" logo ">
-            <a href="./starter.html"></a>
             <img src="./img/logo.png"  alt="">
         </div>
+        <a href="./Donut-main.html"><i class="fa-solid fa-house-chimney fa-2xl" style="color: #f7f7f7;"></i></a>
             <!-- 下拉式選單 -->
         <input type="checkbox" name="" id="menu-toggler">
         <label for="menu-toggler"  class="">
@@ -40,7 +40,15 @@
 
 
 
-
+    <!-- 麵包屑 -->
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./Donut-main.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Menu</li>
+            </ol>
+        </nav>
+    </div>
 
 
 

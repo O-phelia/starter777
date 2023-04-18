@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./reset.css">
-        <link rel="stylesheet" href="./st-stlye2.css">
+        <link rel="stylesheet" href="./Donut-style.css">
     </head>
 
     <style>
@@ -45,24 +45,24 @@
 <!-- 互動橫幅幻燈片----------------- -->
 
 
-        <div id="carouselExample" class="carousel slide ">
+        <div id="carouselExample" class="carousel slide container-fluid">
 
             <div class="carousel-inner bn-scope ">
                 
-                <div class="carousel-item  active h-100">
-                    <img src="./img/3.png" class="d-block donut-pic w-100" alt="...">
+                <div class="carousel-item  active  ">
+                    <img src="./img/3.png" class="d-block donut-pic " alt="...">
                 </div>
-                <div class="carousel-item h-100 ">
-                    <img src="./img/1.png" class="d-block donut-pic w-100 " alt="...">
+                <div class="carousel-item  ">
+                    <img src="./img/1.png" class="d-block donut-pic  " alt="...">
                 </div>
-                <div class="carousel-item h-100">
-                    <img src="./img/2.png" class="d-block donut-pic w-100" alt="...">
+                <div class="carousel-item ">
+                    <img src="./img/2.png" class="d-block donut-pic " alt="...">
                 </div>
-                <div class="carousel-item h-100">
-                    <img src="./img/4.png" class="d-block donut-pic w-100" alt="...">
+                <div class="carousel-item ">
+                    <img src="./img/4.png" class="d-block donut-pic " alt="...">
                 </div>
-                <div class="carousel-item h-100">
-                    <img src="./img/8.png" class="d-block donut-pic w-100" alt="...">
+                <div class="carousel-item ">
+                    <img src="./img/8.png" class="d-block donut-pic " alt="...">
                 </div>
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -76,11 +76,11 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            </div>
+        </div>
 
 
 <!-- 活動頁----------------- -->
-        <div class="container-fluid activity">
+        <div class="container-fluid activity" id="NEWS">
             <div class="row">
                 <div class="col-4 activityRight">
                         <img class="activityPic w-100 "src="./img/mothers.png" alt="">
@@ -88,7 +88,6 @@
                 <div class="col-8">
                         <div class="txt">
                             <h1>Mother's Day Exclusive</h1>
-                            <hr>
                             <p>在特別的這天傳遞濃烈的愛與感謝，<br>母親節專屬奢華心形多拿滋，4/25甜心預購！</p>
                         </div>
                 </div>
@@ -96,18 +95,53 @@
         </div>
 
 
-<!-- 菜單及購物----------------- -->
-        <div class="container">
-            <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col">
-                    <button>Menu and Buy</button>
+<!-- ------熱賣及menu----------- -->
+<div class="container topAll" id="MENU">
+        <div class="container top1">
+            <div class="row p-2 g-3">
+                <div class=" col-5 ">
+                    <img src="./img/7.png" alt="" >
                 </div>
-
+                <div class="item col-7 ">
+                    <h2><i class="fa-solid fa-star fa-xs" style="color: #511f31;"></i> 榛果核桃咖啡</h2>
+                    <p>減糖系列，濃郁咖啡巧克力口味，午茶時段好夥伴！</p>
+                    <a href="./Menu.html"> ALL MENU →</a>
+                </div>
             </div>
         </div>
+
+        <div class="container top2">
+            <div class="row p-2 g-3">
+                <div class="item col-7 ">
+                    <h2><i class="fa-solid fa-star fa-xs" style="color: #511f31;"></i> 金桔檸檬</h2>
+                    <p>酸酸甜甜，少女的糖衣，實在像極了初戀的滋味呀！</p>
+                    <a href="./Menu.html"> ALL MENU →</a>
+                </div>
+                <div class=" col-5 ">
+                    <img src="./img/1.png" alt="" >
+                </div>
+            </div>
+        </div>
+
+        <div class="container top3">
+            <div class="row p-2 g-3">
+                <div class=" col-5 ">
+                    <img src="./img/14.png" alt="" >
+                </div>
+                <div class="item col-7 ">
+                    <h2><i class="fa-solid fa-star fa-xs" style="color: #511f31;"></i> 莓果醇奶冰沙</h2>
+                    <p>冰鎮首選！選用初鹿鮮奶製成，莓果酸甜健康滿分！</p>
+                    <a href="./Menu.html"> ALL MENU →</a>
+                </div>
+                </div>
+                    <button class="menuBuy" ><a href="./Menu.html">Menu and Buy</a></button>
+                </div>
+            </div>
+        </div>
+
+                
+</div>
+
 
 
 

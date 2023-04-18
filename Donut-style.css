@@ -19,7 +19,7 @@ body{
 .logo{
     height:100%;
     position: relative;
-    left: 34%;
+    left: 33%;
 }
 .logo img{
     width: 120px;
@@ -29,7 +29,7 @@ body{
     background-color: #a92626;
     padding: 18px 10px;
     height: 80PX;
-    width: 100%;
+    width:100%;
     z-index: 10;
 }
 .header #menu-toggler{
@@ -37,7 +37,7 @@ body{
 }
 .header .fa-bars{
     transform: scale(1.5);
-    color: #070707;
+    color: #ffffff;
     position: absolute;
     right: 30px;top: 40px;
     
@@ -93,35 +93,47 @@ nav a:hover{
 /* MOBILE 導覽列 END^ | 幻燈片START ˇ--------------------------------------------------------------------------------- */
 
 .carousel{
-    margin-top: 30%;
+    margin-top: 170px;
+    width: 100%;
+    /* background-color: #8f5959; */
 }
-.bn-scope{
-    height:600px ;
+.carousel-item{
+    height: 50%;
 }
-
 .donut-pic{
-    margin-top: 70px;
-    /* background-color: #fff; */
+    /* margin: auto; */
     animation: donut 1s ease  infinite alternate none;
+    width: 100%;
 
 }
+
+.active img{
+    width: 100%;
+    margin: auto;
+    /* background-color: #8e8a81; */
+
+}
+
+
 .carousel-control-prev{
     display: none;
 }
 /* 按鈕 */
 .carousel-control-next{
-    position: absolute;
+    /* position: absolute;
     right: 20%;
-    top: 400px;
+    top: 400px; */
     height: 90px;
+    margin-right: 15%;
+    margin-top: 65%;
     /* opacity: 0; */
 }
 .nextbtn{
-    width: 120px;
+    width: 150%;
     opacity:1;
 }
 .nextbtn:active{
-    filter: drop-shadow( 9px 9px 10px rgb(58, 54, 46,0.5));
+    filter: drop-shadow( 5px 5px 3px rgb(58, 54, 46,0.5));
 
 }
 
@@ -129,11 +141,11 @@ nav a:hover{
 /* --------------------- */
 @keyframes donut{
     0%{
-    transform: translateY(0px);
+    transform: translateY(30px) ;
         
     }
     100%{
-        transform: translateY(35px);
+        transform: translateY(-20px) ;
 
     }
 }
@@ -143,8 +155,10 @@ nav a:hover{
 
 
 .activity{
-    background-color: #f0d4db;
-    height: 100%;
+    background-color: #e79b7a;
+    height: 180px;
+    margin-top: 20%;
+
     box-shadow: 0px -25px 30px rgba(255, 255, 255, 0.4);
 }
 .activityPic{
@@ -165,17 +179,91 @@ nav a:hover{
     margin-top: 20px;
     margin-bottom: 10px;
     cursor: default;
+    color: #8e3932;
 }
-.activity hr{
-    color: #726262;
-}
+
 .activity p{
     font-size: 13px;
     font-weight: 600;
     margin-top: 10px;
     cursor: default;
+    color: #fbeee7;
+
 }
 
 
-/* 小活動頁 END| MENU START ˇ--------------------------------------------------------------------------------- */
+/* 小活動頁 END| MENU & TOP START ˇ--------------------------------------------------------------------------------- */
+.topAll{
+    background-image: url(./img/TOP底圖.png);
+    filter: drop-shadow( -2px -2px 0.5px rgba(172, 105, 64, 0.5));
+    padding-top: 40px;
+    margin-top: -40px;
+}
+
+.topAll .item{
+    /* background-color: #dbcbb8; */
+    height: 70%;
+    margin-top: 30px;
+}
+.topAll img{
+    filter: drop-shadow( -7px 6px 1px rgb(58, 54, 46,0.5));
+    width:140px;
+}
+.topAll .item h2{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #511f31;
+}
+.topAll .item p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #511f31;
+
+}
+.topAll .row{
+    height: 170px;
+    border-bottom: #581313 3px dotted;
+}
+.topAll .item a{
+    text-decoration: none;
+    color: #237031;
+    font-size: 12px;
+    padding: 3px;
+}
+.top2 .item{
+    padding-left:15px;
+}
+.top2 img{
+    padding-left:5px;
+    padding-top: 5px;
+}
+.top1{
+    margin: 50px 0px 5px 0px;
+}
+.top2{
+    margin: 5px 0px;
+}
+.top3{
+    margin: 5px 0px;
+}
+
+.menuBuy{
+    margin-top: 30px;
+    width: 40%;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 0px 10px 10px 10px;
+    border: none;
+    color: #fbeee7;
+    background-color: #e79b7a;
+    transform: translateX(80%);
+}
+.menuBuy a{
+    text-decoration: none;
+    color: #581313;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
 
